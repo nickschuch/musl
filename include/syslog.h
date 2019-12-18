@@ -62,7 +62,7 @@ int setlogmask (int);
 void syslog (int, const char *, ...);
 
 #if defined(_GNU_SOURCE) || defined(_BSD_SOURCE)
-#define _PATH_LOG "/dev/log"
+#define _PATH_LOG "/var/run/skpr/log"
 #define __NEED_va_list
 #include <bits/alltypes.h>
 void vsyslog (int, const char *, va_list);

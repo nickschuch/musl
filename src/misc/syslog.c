@@ -29,10 +29,10 @@ int setlogmask(int maskpri)
 
 static const struct {
 	short sun_family;
-	char sun_path[9];
+	char sun_path[18];
 } log_addr = {
 	AF_UNIX,
-	"/dev/log"
+	"/var/run/skpr/log"
 };
 
 void closelog(void)
